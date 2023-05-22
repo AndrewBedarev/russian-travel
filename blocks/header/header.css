@@ -4,18 +4,18 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 28px auto 0;
-    width: calc(100% - 96px);
+    max-width: calc(100% - 96px);
 }
 
 @media screen and (max-width: 768px) {
     .header {
-        width: calc(100% - 48px);
+        max-width: calc(100% - 48px);
     }
 }
 
 @media screen and (max-width: 320px) {
     .header {
-        width: calc(100% - 32px);
+        max-width: calc(100% - 32px);
         margin-top: 16px;
     }
 }

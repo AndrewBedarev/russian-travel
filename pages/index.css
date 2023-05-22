@@ -12,6 +12,64 @@
 @import url(../blocks/lead/__title/lead__title.css);
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__caption/lead__caption.css);
 
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__text/intro__text.css);
+@import url(../blocks/intro/__list/intro__list.css);
 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    margin: 92px auto;
+    max-width: 1184px;
+}
+
+.photo-grid__item{
+    width: 284px;
+    height: 213px;
+}
+
+@media screen and (max-width: 1190px) {
+    .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 14px;
+    max-width: 928px;
+}
+.photo-grid__item{
+    width: 300px;
+    height: 225px;
+}
+}
+
+@media screen and (max-width: 930px) {
+    .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    max-width: 720px;
+    margin-top: 88px;
+}
+.photo-grid__item {
+    width: 352px;
+    height: 264px;
+}
+}
+
+@media screen and (max-width: 720px) {
+    .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    max-width: 288px;
+    gap: 12px;
+    margin-top: 64px;
+}
+.photo-grid__item {
+    width: 288px;
+    height: 216px;
+}
+}
 
