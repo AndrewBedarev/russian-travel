@@ -21,11 +21,11 @@
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
     gap: 16px;
     margin: 92px auto;
     max-width: 1184px;
+    
 }
 
 .photo-grid__item{
@@ -35,8 +35,6 @@
 
 @media screen and (max-width: 1190px) {
     .photo-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     gap: 14px;
     max-width: 928px;
 }
@@ -48,8 +46,6 @@
 
 @media screen and (max-width: 930px) {
     .photo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     max-width: 720px;
     margin-top: 88px;
 }
@@ -59,17 +55,84 @@
 }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
     .photo-grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    gap: 14px;
     max-width: 288px;
-    gap: 12px;
     margin-top: 64px;
 }
-.photo-grid__item {
+.photo-grid__item{
     width: 288px;
     height: 216px;
 }
 }
 
+.place {
+    display: grid;
+    max-width: 984px;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    margin: 0 auto;
+    column-gap: 40px;
+}
+
+.place__title {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 76px;
+margin: 0 0 48px 0;
+max-width: 460px;
+}
+
+.place__url-heading {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+letter-spacing: 2px;
+color: #AAAAAA;
+margin: 0 0 12px 0;
+}
+
+.place__image {
+    width: 460px;
+    height: 460px;
+    margin-bottom: 80px;
+}
+
+.place__url-link {
+color: white;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-decoration-line: underline;
+}
+
+.place__url-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 48px;
+}
+
+.place__paragraph-container {
+
+}
+
+.place__paragraph {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 163%;
+margin-bottom: 26px;
+}
+
+.place__paragraph:last-child {
+    margin-bottom: 0;
+}
