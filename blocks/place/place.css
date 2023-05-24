@@ -1,0 +1,24 @@
+.place {
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+}
+
+@media screen and (max-width: 720px) {
+    .place {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 928px) {
+    .place {
+    margin-bottom: 73px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .place {
+    margin-bottom: 50px;
+    }
+}
