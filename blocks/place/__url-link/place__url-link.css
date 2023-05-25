@@ -13,3 +13,8 @@ text-decoration-line: underline;
 padding: 0 16px;
     }
 }
+
+.place__url-link:hover {
+    opacity: 0.8;
+    transition: opacity 1s linear;
+}
