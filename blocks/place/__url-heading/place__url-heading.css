@@ -1,5 +1,4 @@
 .place__url-heading {
-    font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -11,6 +10,6 @@ color: #AAAAAA;
 @media screen and (max-width: 720px) {
     .place__url-heading {
 padding: 0 16px;
-margin: 32px 0 16px;
+margin: 32px 0 0;
     }
 }
