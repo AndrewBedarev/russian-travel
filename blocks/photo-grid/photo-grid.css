@@ -9,15 +9,16 @@
 }
 }
 
-@media screen and (max-width: 928px) {
+@media screen and (max-width: 945px) {
     .photo-grid {
     max-width: 720px;
-    margin: 64px auto;
+    margin: 88px auto;
 }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
     .photo-grid {
     max-width: 288px;
+    margin: 64px auto;
 }
 }

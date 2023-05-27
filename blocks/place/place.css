@@ -2,25 +2,37 @@
     margin: 0 auto 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    color: white;
-    list-style:none;
-    padding-left:0;
+    color: #FFFFFF;
+    gap: 48px 40px;
 }
 
-@media screen and (max-width: 720px) {
+.place:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1025px) {
     .place {
-        grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
     }
 }
 
 @media screen and (max-width: 928px) {
     .place {
     margin-bottom: 73px;
+    row-gap: 28px;
     }
 }
 
 @media screen and (max-width: 720px) {
     .place {
-    margin-bottom: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    .place {
+    max-width: 320px;
+    gap: 32px 0;
     }
 }
