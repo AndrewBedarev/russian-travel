@@ -28,15 +28,3 @@
     url(./inter/Inter-Black.woff2) format('woff2'),
     url(./inter/Inter-Black.ttf) format('tryetype');
 }
-
-.lead__figure{
-    margin: 0;
-}
-
-.header__item {
-    margin-right: 16px;
-}
-
-.header__item:last-child {
-    margin-right: 0;
-}
